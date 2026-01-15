@@ -17,7 +17,27 @@ class Home extends StatelessWidget {
       backgroundColor:  Colors.amberAccent   ,
       ),
     body:Center(
-     /* child: Text(
+     child: ElevatedButton.icon(
+
+      onPressed:(){
+        print('Hello');
+      },
+      //child:Text('Click Me'),
+      icon:Icon(
+        Icons.mail,
+      ),
+      label:Text('Hello'),
+      style:ElevatedButton.styleFrom(
+        backgroundColor: Colors.amber
+      ),
+     )
+     
+     /* child: Icon(
+        Icons.airport_shuttle,
+        color:Colors.purple,
+        size: 50.0,
+      ),
+      child: Text(
         "Hello I am Yasas ",
         style: TextStyle(
           fontSize:20,
@@ -25,15 +45,15 @@ class Home extends StatelessWidget {
           letterSpacing: 2,
           color: const Color.fromARGB(255, 59, 57, 200)
         ),*/
-        child :Image(
+       // child :Image(
           //image:NetworkImage('')// a image link off internet
-          image:AssetImage('assets/file.jpg')
-        ),
+         // image:AssetImage('assets/file.jpg')
+       // ),
       ),
     
     floatingActionButton: FloatingActionButton(
       onPressed: (){
-      child: print("Click ");
+       print("Click ");
       },
       child: Text("Click "),
       backgroundColor: Colors.deepPurpleAccent,
